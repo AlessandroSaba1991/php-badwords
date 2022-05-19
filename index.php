@@ -11,21 +11,7 @@ $text = 'We recommend the official vue-fontawesome component (described below), 
 
 /* Lunghezza testo e testo prima della censura */
 echo  $text . "<br>" . "Lunghezza: " . strlen($text) . "<br>" . "<br>";
+
 /* Lunghezza testo e testo dopo la censura */
 echo str_replace($_GET['parolaccia'], '***', $text) . "<br>" . "Lunghezza: " . strlen(str_replace($_GET['parolaccia'], '***', $text));
 ?>
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-
-<body>
-
-</body>
-
-</html>
